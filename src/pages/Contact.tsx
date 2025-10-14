@@ -31,19 +31,19 @@ const contactInfo = [
 
 const Contact = () => {
   return (
-    <div className="min-h-screen pt-24 pb-16 px-4">
-      <div className="container mx-auto max-w-4xl">
+    <div className="min-h-screen pt-32 px-6 md:px-12 lg:px-24 pb-32 flex items-center justify-center">
+      <div className="container mx-auto max-w-5xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="space-y-12"
+          className="space-y-16"
         >
-          <div className="text-center space-y-4">
-            <h1 className="text-4xl md:text-5xl font-heading font-bold text-gradient">
+          <div className="text-center space-y-8">
+            <h1 className="text-6xl md:text-7xl font-heading font-bold text-gradient">
               Get In Touch
             </h1>
-            <p className="text-lg text-muted-foreground font-body max-w-2xl mx-auto">
+            <p className="text-2xl text-muted-foreground font-body max-w-3xl mx-auto leading-relaxed">
               I'm always open to discussing new projects, opportunities, or collaborations
             </p>
           </div>
@@ -53,13 +53,13 @@ const Contact = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            <Card className="bg-card/50 backdrop-blur border-border">
+            <Card className="bg-card/50 backdrop-blur border-primary/20 shadow-elevated">
               <CardHeader>
-                <CardTitle className="text-center text-2xl font-heading text-primary">
+                <CardTitle className="text-center text-3xl font-heading text-primary">
                   Contact Information
                 </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-6">
+              <CardContent className="space-y-6 p-12">
                 {contactInfo.map((item, index) => {
                   const Icon = item.icon;
                   return (
@@ -68,24 +68,24 @@ const Contact = () => {
                       initial={{ opacity: 0, x: -20 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: 0.3 + index * 0.1, duration: 0.5 }}
-                      className="flex items-center gap-4 p-4 rounded-lg bg-muted/30 hover:bg-muted/50 transition-colors"
+                      className="flex items-center gap-6 p-6 rounded-lg bg-muted/30 hover:bg-muted/50 transition-smooth hover:scale-105"
                     >
-                      <div className="p-3 rounded-lg bg-primary/10">
-                        <Icon className="h-6 w-6 text-primary" />
+                      <div className="p-4 rounded-lg bg-primary/10 glow-primary">
+                        <Icon className="h-8 w-8 text-primary animate-pulse-slow" />
                       </div>
                       <div className="flex-grow">
-                        <p className="text-sm text-muted-foreground font-body">{item.label}</p>
+                        <p className="text-lg text-muted-foreground font-body">{item.label}</p>
                         {item.link ? (
                           <a
                             href={item.link}
                             target={item.link.startsWith('http') ? '_blank' : undefined}
                             rel={item.link.startsWith('http') ? 'noopener noreferrer' : undefined}
-                            className="text-foreground font-body hover:text-primary transition-colors"
+                            className="text-foreground font-body text-xl hover:text-primary transition-colors"
                           >
                             {item.value}
                           </a>
                         ) : (
-                          <p className="text-foreground font-body">{item.value}</p>
+                          <p className="text-foreground font-body text-xl">{item.value}</p>
                         )}
                       </div>
                     </motion.div>
@@ -101,12 +101,12 @@ const Contact = () => {
             transition={{ delay: 0.8, duration: 0.6 }}
             className="text-center"
           >
-            <p className="text-muted-foreground font-body mb-6">
+            <p className="text-muted-foreground font-body mb-8 text-xl">
               Feel free to reach out for internships, collaborations, or just to connect!
             </p>
             <a href="mailto:grvignesh.official@gmail.com">
-              <Button size="lg" className="bg-cosmic hover:opacity-90 text-primary-foreground font-body">
-                <Mail className="mr-2 h-5 w-5" />
+              <Button size="lg" className="bg-cosmic hover:opacity-90 text-primary-foreground font-body text-lg px-10 py-7 glow-primary transition-smooth hover:scale-105">
+                <Mail className="mr-2 h-6 w-6" />
                 Send an Email
               </Button>
             </a>
