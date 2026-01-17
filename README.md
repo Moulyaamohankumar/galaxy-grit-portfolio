@@ -1,73 +1,73 @@
-# Welcome to your Lovable project
 
-## Project info
+🏥 Smart Hospital Web UI
 
-**URL**: https://lovable.dev/projects/29910687-05bc-4c69-98a0-b89b83836403
+A modern healthcare web interface that helps users find nearby doctors based on their symptoms and automatically translates the content according to their GPS location.
 
-## How can I edit this code?
+🚀 Features
+	•	🔍 Symptom-Based Doctor Search
+Users can enter their health concerns to find relevant doctors nearby.
+	•	📍 GPS-Based Location Detection
+The app detects the user’s location to show nearby hospitals and specialists.
+	•	🌐 Automatic Language Translation
+The UI adapts to the user’s local language for better accessibility.
+	•	💻 User-Friendly Interface
+Clean, responsive, and easy-to-use web UI.
 
-There are several ways of editing your application.
+🛠️ Tech Stack
+	•	Frontend: HTML, CSS, JavaScript
+	•	APIs:
+	•	Geolocation API
+	•	Translation API
+	•	Maps / Doctor Search API
+	•	Framework (if used): React / Next.js / etc.
 
-**Use Lovable**
+📸 Screenshots
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/29910687-05bc-4c69-98a0-b89b83836403) and start prompting.
+(Add screenshots of your UI here)
 
-Changes made via Lovable will be committed automatically to this repo.
+📦 Installation
+	1.	Clone the repository
 
-**Use your preferred IDE**
+git clone https://github.com/your-username/your-repo-name.git
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+	2.	Open the project
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+cd your-repo-name
 
-Follow these steps:
+	3.	Run the app
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+open index.html
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+(Or use your framework’s dev server)
 
-# Step 3: Install the necessary dependencies.
-npm i
+🧠 How It Works
+	1.	User enters symptoms
+	2.	System detects GPS location
+	3.	Nearby doctors are fetched
+	4.	Language is translated automatically
+	5.	Results are displayed in the user’s local language
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+🌍 Use Cases
+	•	Travelers needing medical help
+	•	Rural users finding nearby doctors
+	•	Multilingual regions
+	•	Emergency healthcare support
 
-**Edit a file directly in GitHub**
+📌 Future Improvements
+	•	AI-powered diagnosis suggestions
+	•	Appointment booking system
+	•	Doctor ratings & reviews
+	•	Medical record uploads
+	•	Chat with doctors
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+🤝 Contributing
 
-**Use GitHub Codespaces**
+Pull requests are welcome.
+For major changes, please open an issue first.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+📄 License
 
-## What technologies are used for this project?
+This project is open-source under the MIT License.
 
-This project is built with:
+⸻
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/29910687-05bc-4c69-98a0-b89b83836403) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
